@@ -188,13 +188,13 @@ public class MainActivity extends FragmentActivity implements Fragment1.OnButton
         newFragments = inSequence;
 
         FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-//                .setCustomAnimations(
-//                        R.anim.slide_in,  // enter
-//                        R.anim.fade_out,  // exit
-//                        R.anim.fade_in,   // popEnter
-//                        R.anim.slide_out  // popExit
-//                );
+        FragmentTransaction transaction = fragmentManager.beginTransaction()
+                .setCustomAnimations(
+                        R.anim.fade_in,  // enter
+                        R.anim.fade_out,  // exit
+                        R.anim.slide_in,   // popEnter
+                        R.anim.slide_out  // popExit
+                );
 
         for (int i = 0; i < 4; i++) {
             transaction.replace(frames[i], newFragments[i]);
