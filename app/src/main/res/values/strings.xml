@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Nazwa aplikacji -->
-    <string name="app_name">Dynamic fragments</string>
+    <string name="app_name">Dynamic fragments final</string>
 
     <!-- Napisy na przyciskach -->
     <string name="button_shuffle">Shuffle</string>
